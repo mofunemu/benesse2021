@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+
 class PostPage extends StatefulWidget {
 
   @override
@@ -9,6 +10,7 @@ class PostPage extends StatefulWidget {
 
 class _PostPagePageState extends State<PostPage> {
 
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
   TextEditingController _textEditingController = TextEditingController();
 
   @override
